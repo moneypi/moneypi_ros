@@ -1,0 +1,5 @@
+<launch>
+  <include file="$(find xrrobot)/launch/lidar/$(env XRLIDAR).launch" />
+  <include file='$(find riki_lidar_follower)/launch/nodes/laserTracker.launch' />
+  <include file='$(find riki_lidar_follower)/launch/nodes/follower.launch' />
+</launch>
